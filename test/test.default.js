@@ -33,6 +33,30 @@ var captureHandler = require('../lib/fs-capture')
 var BasePath = 'test/tmp'
 
 /*
+  Some integrity checks before we hook up the rest
+*/
+
+describe('fs-capture [INTEGRITY CHECKS]', function () {
+  it('verifies whether Object.assign exists', function () {
+    assert.ok(('assign' in Object))
+  })
+  it('verifies native fs constants', function () {
+    assert.ok(('F_OK' in fs))
+  })
+  it('verifies native fs.stat function', function () {
+    assert.ok(('stat' in fs))
+  })
+
+  /* Now it's safe to assign Promise.promisifyAll */
+  fs = Promise.promisifyAll(fs)
+
+  it('verifies promisification of fs.stat (.statAsync) (Bluebird)', function () {
+    assert.ok(('statAsync' in fs))
+  })
+})
+
+
+/*
   Just a few helpers we need for the initial setup.
   You might want to check the [SETUP] flow below.
 */
@@ -98,29 +122,6 @@ var toArrayThenPromise = function () {
 
 Object.getPrototypeOf(folders).toArrayThenPromise = toArrayThenPromise
 Object.getPrototypeOf(files).toArrayThenPromise = toArrayThenPromise
-
-/*
-  Some integrity checks before we hook up the rest
-*/
-
-describe('fs-capture [INTEGRITY CHECKS]', function () {
-  it('verifies whether Object.assign exists', function () {
-    assert.ok(('assign' in Object))
-  })
-  it('verifies native fs constants', function () {
-    assert.ok(('F_OK' in fs))
-  })
-  it('verifies native fs.stat function', function () {
-    assert.ok(('stat' in fs))
-  })
-
-  /* Now it's safe to assign Promise.promisifyAll */
-  fs = Promise.promisifyAll(fs)
-
-  it('verifies promisification of fs.stat (.statAsync) (Bluebird)', function () {
-    assert.ok(('statAsync' in fs))
-  })
-})
 
 /*
   Now it's time to set up our test folders and files.
