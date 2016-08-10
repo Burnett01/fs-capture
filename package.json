@@ -1,0 +1,58 @@
+{
+  "name": "fs-capture",
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/Cloud2Box/fs-capture/issues"
+  },
+  "description": "Captures a folder and/or file, based on a path.",
+  "keywords": [
+    "filesystem",
+    "exist",
+    "exists",
+    "suffix",
+    "extension",
+    "search",
+    "find",
+    "capture",
+    "folder",
+    "directory",
+    "file",
+    "fs",
+    "javascript",
+    "node",
+    "nodejs",
+    "linux",
+    "windows",
+    "fast",
+    "minimal",
+    "lightweight",
+    "pure",
+    "promise",
+    "bluebird",
+    "precedence",
+    "filter",
+    "tests",
+    "unit-tests"
+  ],
+  "author": {
+    "name": "Steven Agyekum",
+    "email": "info@cloud2box.net",
+    "url": "https://github.com/Cloud2Box/fs-capture"
+  },
+  "main": "./lib/fs-capture.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec ./test/test.default.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloud2Box/fs-capture.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "3.0.2"
+  }
+}
