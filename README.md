@@ -1,5 +1,5 @@
 # fs-capture
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Cloud2Box/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Cloud2Box/fs-capture.svg?branch=master)](https://travis-ci.org/Cloud2Box/fs-capture) [![npm version](https://badge.fury.io/js/fs-capture.svg?ver=88)](https://badge.fury.io/js/fs-capture)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Cloud2Box/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Cloud2Box/fs-capture.svg?branch=master)](https://travis-ci.org/Cloud2Box/fs-capture) [![npm version](https://badge.fury.io/js/fs-capture.svg?ver=88)](https://badge.fury.io/js/fs-capture)
 [<img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" align="right" />](https://github.com/feross/standard)
 
 
