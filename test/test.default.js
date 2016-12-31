@@ -4,8 +4,8 @@
 * Product:      fs-capture
 * Description:  Captures a folder and/or file, based on a path.
 *
-* Copyright (c) 2016 Cloud2Box - IT Dienstleistungen <info@cloud2box.net>
-*               2016 Steven Agyekum (Burnett01) <s-8@posteo.mx>
+* Copyright (c) 2016-2017 Cloud2Box - IT Dienstleistungen <info@cloud2box.net>
+*               2016-2017 Steven Agyekum (Burnett01) <s-8@posteo.mx>
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 * and associated documentation files (the "Software"), to deal in the Software without restriction,
