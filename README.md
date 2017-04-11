@@ -12,6 +12,7 @@ Perhaps a file and a folder share the same name and sometimes we don't even know
 And what if we just want to gather those files/folders in a specific order?
 
 <br>
+
 **Here comes fs-capture into play!**
 
 
@@ -93,6 +94,7 @@ However. You can simply change this behaviour to get the desired results.
 | sort | A integer of 1 = File or 2 = Folder (optional) [bound to `extension`] |
 
 <hr style="border:1px solid grey;color:red;" />
+
 > **Important!** The ```sort``` option does only work in conjunction with the ```extension``` option! [read more](#explanation)
 
 ---
@@ -324,7 +326,7 @@ If you don't need that structure anymore, simply delete by running ```make clean
 
 ---
 
-##How to install:
+## How to install:
 Use `npm install fs-capture` 
 
 ---
