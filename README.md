@@ -1,4 +1,5 @@
 # fs-capture
+
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Burnett01/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Burnett01/fs-capture.svg?branch=master)](https://travis-ci.org/Burnett01/fs-capture) [![npm version](https://badge.fury.io/js/fs-capture.svg?ver=88)](https://badge.fury.io/js/fs-capture)
 [<img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" align="right" />](https://github.com/feross/standard)
 
@@ -23,6 +24,7 @@ Read the explanation: [Explanation](#explanation)
 ---
 
 # Table of contents
+
 * [API Reference](#api-reference)
   * [Arguments](#arguments)
 * [Default options](#defopt)
@@ -33,11 +35,13 @@ Read the explanation: [Explanation](#explanation)
   * [Example (promises)](#example-promises) (recommended)
 * [Flows](#flows)
 * [Important notes](#important-notes)
+* [Todo](#todo)
+* [How to install](#how-to-install)
 * [Unit-Tests](#unit-tests)
   * [Test-case: Default](../master/test/test.default.js)
   * [Make](#make)
   * [NPM](#npm)
-* [How to install](#how-to-install)
+* [Contributing](#contributing)
 * [License](#license)
 
 ---
@@ -100,6 +104,7 @@ However. You can simply change this behaviour to get the desired results.
 ---
 
 ## Setup
+
 fs-capture can be easily set up.
 
 ```javascript
@@ -109,6 +114,7 @@ var capture = require('fs-capture')
 ---
 
 ## Explanation
+
 Assume we have the following directory: ```/home/steven/```
 
 Inside that directory we have a folder called ```code``` and a file called ```code.txt```
@@ -144,6 +150,7 @@ If we hadn't specified the order, the capture-processor would've returned the fo
 ## Examples
 
 ### Example (callback)
+
 Catch a directory and file called 'dog' in default order
 
 ```javascript
@@ -165,12 +172,15 @@ capture('/home/steven/dog', function (err, results) {
 
 })
 ```
+
 Check the next example to get an impression on how to use options.
 
 ### Example (promises)
+
 Catch a directory and file called 'dog' in default order.
 
 Get all results:
+
 ```javascript
 capture('/home/steven/dog')
 .then(function (results) {
@@ -182,11 +192,13 @@ capture('/home/steven/dog')
 ```
 
 Get all results (2nd approach):
+
 ```javascript
 capture('/home/steven/dog').all() //same as above
 ```
 
-Get results one by one
+Get results one by one:
+
 ```javascript
 capture('/home/steven/dog')
 .each(function (result) {
@@ -238,30 +250,36 @@ There are atleast 5 flows available to be used with the callback or promises:
 capture('/home/steven/dog')
 // Captures a folder OR file by the name of dog
 ```
+
 ```javascript
 capture('/home/steven/dog.txt')
 // Captures a folder OR file by the name of dog.txt
 ```
+
 ```javascript
 capture('/home/steven/dog', { extension: '.txt' })
 // Captures a folder AND file by the name of dog and dog.txt
 ```
+
 ```javascript
 capture('/home/steven/dog', { extension: '.txt', sort: 1 })
 // Captures a file AND folder by the name of dog and dog.txt sorted by the file
 ```
+
 ```javascript
 capture('/home/steven/dog', { extension: '.txt', sort: 2 })
 // Captures a file AND folder by the name of dog and dog.txt sorted by folder
 // This works the same as flow 3 thus redundant
 ```
-[...] to continue
+
+[...] to be continued
 
 Once you got your results you may want to do more: [Check promises](#example-promises)
 
 ---
 
 ### Important notes
+
  * fs-capture **does not(!)** read, search nor traverse the supplied ```target```. 
   
   It simply checks whether a file/folder exists by grabbing their stats. Check [.stat()](https://nodejs.org/api/fs.html#fs_fs_fstat_fd_callback)
@@ -291,12 +309,20 @@ Once you got your results you may want to do more: [Check promises](#example-pro
 ---
 
 ### Todo
+
 * Add ```captureSync()``` if needed. Quite redundant in favour of promises.
 * Improvements
 
 ---
 
+## How to install:
+
+Use `npm install fs-capture` 
+
+---
+
 ## Unit-Tests
+
 The testing-framework used in this module is [Mocha](https://github.com/mochajs/mocha) with the BDD / TDD assertion library [Chai](https://github.com/chaijs/chai).
 
 Various tests are performed to make sure this module runs as smoothly as possible.
@@ -314,9 +340,11 @@ Default reporter: `spec`
 Any other reporter:  ``make test REPORTER=nyan``
 
 ### Make
+
 ```make test```
 
 ### NPM
+
 ```npm test```
 
 <br />
@@ -326,10 +354,12 @@ If you don't need that structure anymore, simply delete by running ```make clean
 
 ---
 
-## How to install:
-Use `npm install fs-capture` 
+## Contributing
+
+You're very welcome and free to contribute. Thank you.
 
 ---
 
 ## License
+
 [MIT](../master/LICENSE.MD)
