@@ -323,7 +323,7 @@ Use `npm install fs-capture`
 
 ## Unit-Tests
 
-The testing-framework used in this module is [Mocha](https://github.com/mochajs/mocha) with the BDD / TDD assertion library [Chai](https://github.com/chaijs/chai).
+The testing-framework used by this module is [Mocha](https://github.com/mochajs/mocha) with the BDD / TDD assertion library [Chai](https://github.com/chaijs/chai).
 
 Various tests are performed to make sure this module runs as smoothly as possible.
 
