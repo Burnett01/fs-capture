@@ -4,7 +4,7 @@
 [<img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" align="right" />](https://github.com/feross/standard)
 
 
-Captures a folder and/or file, based on a path.
+Captures a folder/file based on a path.
 
 We've all been to that point where we want to query a file/folder in a convenient way.
 
