@@ -8,7 +8,7 @@ Captures a folder/file based on a path.
 
 We've all been to that point where we want to query a file/folder in a convenient way.
 
-Perhaps a file and a folder share the same name and sometimes we don't even know the extension beforehand.
+Perhaps a file and a folder share the same name and sometimes we don't even know the extension.
 
 And what if we just want to gather those files/folders in a specific order?
 
@@ -76,9 +76,9 @@ capture(
 
 **Default options:** <a id="defopt"></a>
 
-By default the capture-processor is going check for a directory first.
+By default, the capture-processor is going to check for a directory first.
 
-Since directory-names normally do not contain an extension (suffix), 
+Since directory-names usually do not contain an extension (suffix), 
 it is safe to assume that there are less zero-extension 
 files than directories in a real-world scenario.
 
@@ -95,7 +95,7 @@ However. You can simply change this behaviour to get the desired results.
 | Option | Description |
 | ------ | ----------- |
 | extension   | A string that contains a suffix '.js' (optional) [bound to `sort`] |
-| sort | A integer of 1 = File or 2 = Folder (optional) [bound to `extension`] |
+| sort | An integer of 1 = File or 2 = Folder (optional) [bound to `extension`] |
 
 <hr style="border:1px solid grey;color:red;" />
 
@@ -202,7 +202,7 @@ Get results one by one:
 ```javascript
 capture('/home/steven/dog')
 .each(function (result) {
-  // do something for each result
+  // do something with each result
 })
 .catch(function (err) {
   // do error handling
@@ -217,7 +217,7 @@ capture('/home/steven/dog')
   return !(result.type == 2)
 })
 .then(function (results) {
-  // do something for each result
+  // do something with each result
 })
 .catch(function (err) {
   // do error handling
@@ -226,7 +226,8 @@ capture('/home/steven/dog')
 
 There is a lot you can archive with promises.
 
-Some of them:
+List of possible functions:
+
 + .all
 + .props
 + .any
@@ -244,7 +245,7 @@ Check Bluebirds [API-Reference](http://bluebirdjs.com/docs/api-reference.html) f
 
 ### Flows
 
-There are atleast 5 flows available to be used with the callback or promises:
+There are atleast 5 flows available, to be used with the callback or promises:
 
 ```javascript
 capture('/home/steven/dog')
@@ -269,12 +270,12 @@ capture('/home/steven/dog', { extension: '.txt', sort: 1 })
 ```javascript
 capture('/home/steven/dog', { extension: '.txt', sort: 2 })
 // Captures a file AND folder by the name of dog and dog.txt sorted by folder
-// This works the same as flow 3 thus redundant
+// This works the same as flow 3, thus redundant
 ```
 
 [...] to be continued
 
-Once you got your results you may want to do more: [Check promises](#example-promises)
+Once you've got your results, you may want to do more: [Check promises](#example-promises)
 
 ---
 
@@ -287,7 +288,7 @@ Once you got your results you may want to do more: [Check promises](#example-pro
 
  * An error of type ``ENOENT`` will be supressed by the capture-processor, when file and folder are not found.
 
-  Instead an empty Array is forwarded to the 2nd parameter of the nodeback.
+  Instead, an empty Array is forwarded to the 2nd parameter of the nodeback.
 
   When using Promises, the ``.catch()`` handler will not be fired on ``ENOENT``.
 
@@ -295,9 +296,9 @@ Once you got your results you may want to do more: [Check promises](#example-pro
 
   <strong>Any other error will not be supressed and forwarded/thrown.</strong>
 
-  This is intentional due to the way of how a file/folder is processed. 
+  This is intentional due to the way of how a file/folder is being processed. 
 
-  Soon a custom error-handler ontop of Promises (or an option) will be added, to have the client catch that error.
+  Soon, a custom error-handler ontop of Promises (or an option) will be added, to have the client catch that error.
 
 
 * The ```sort``` option does only work in conjunction with the ```extension``` option,
@@ -349,8 +350,8 @@ Any other reporter:  ``make test REPORTER=nyan``
 
 <br />
 
-Once executed, an entire testing-filestructure will be created for you. Up to 3 empty folders and files are put into ```test/tmp/```, prior to running the tests.
-If you don't need that structure anymore, simply delete by running ```make clean```
+Once executed, an entire testing file structure will be created for you. Up to 3 empty folders and files are put into ```test/tmp/```, prior to running the tests.
+If you don't need that structure anymore, simply delete it by running ```make clean```
 
 ---
 
