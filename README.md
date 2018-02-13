@@ -35,7 +35,6 @@ Read the explanation: [Explanation](#explanation)
   * [Example (promises)](#example-promises) (recommended)
 * [Flows](#flows)
 * [Important notes](#important-notes)
-* [Todo](#todo)
 * [How to install](#how-to-install)
 * [Unit-Tests](#unit-tests)
   * [Test-case: Default](../master/test/test.default.js)
@@ -306,13 +305,6 @@ Once you've got your results, you may want to do more: [Check promises](#example
   since with the ```extension``` option we are telling the capture-proccessor to check for an additional file/folder.
 
   There is no sense in sorting a single result.
-
----
-
-### Todo
-
-* Add ```captureSync()``` if needed. Quite redundant in favour of promises.
-* Improvements
 
 ---
 
