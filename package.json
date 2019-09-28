@@ -1,5 +1,5 @@
 {
-  "name": "fs-capture",
+  "name": "@burnett01/fs-capture",
   "version": "0.1.4",
   "bugs": {
     "url": "https://github.com/Burnett01/fs-capture/issues"
@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Burnett01/fs-capture.git"
+    "url": "ssh://git@github.com/Burnett01/fs-capture.git"
   },
   "license": "MIT",
   "dependencies": {
