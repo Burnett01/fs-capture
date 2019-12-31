@@ -4,7 +4,7 @@
 * Product:      fs-capture
 * Description:  Captures a folder and/or file, based on a path.
 *
-* Copyright (c) 2016-2019 Steven Agyekum (Burnett01) <agyekum@posteo.de>
+* Copyright (c) 2016-2020 Steven Agyekum (Burnett01) <agyekum@posteo.de>
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 * and associated documentation files (the "Software"), to deal in the Software without restriction,
