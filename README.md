@@ -1,6 +1,6 @@
 # fs-capture
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Burnett01/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Burnett01/fs-capture.svg?branch=master)](https://travis-ci.org/Burnett01/fs-capture) [![npm version](https://badge.fury.io/js/fs-capture.svg?ver=88)](https://badge.fury.io/js/fs-capture)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Burnett01/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Burnett01/fs-capture.svg?branch=master)](https://travis-ci.org/Burnett01/fs-capture) [![npm version](https://badge.fury.io/js/%40burnett01%2Ffs-capture.svg)](https://badge.fury.io/js/%40burnett01%2Ffs-capture)
 [<img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" align="right" />](https://github.com/feross/standard)
 
 
@@ -107,7 +107,7 @@ However. You can simply change this behaviour to get the desired results.
 fs-capture can be easily set up.
 
 ```javascript
-var capture = require('fs-capture')
+var capture = require('@burnett01/fs-capture')
 ```
 
 ---
@@ -310,7 +310,7 @@ Once you've got your results, you may want to do more: [Check promises](#example
 
 ## How to install:
 
-Use `npm install fs-capture` 
+Use `npm install @burnett01/fs-capture` 
 
 ---
 
