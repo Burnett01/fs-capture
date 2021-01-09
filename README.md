@@ -1,6 +1,6 @@
 # fs-capture
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Burnett01/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.org/Burnett01/fs-capture.svg?branch=master)](https://travis-ci.org/Burnett01/fs-capture) [![npm version](https://badge.fury.io/js/%40burnett01%2Ffs-capture.svg)](https://badge.fury.io/js/%40burnett01%2Ffs-capture)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/demo.html?gist=bc50ea2bea3e8dc1969e72572646354a) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Burnett01/fs-capture/master/LICENSE) [![Build Status](https://travis-ci.com/Burnett01/fs-capture.svg?branch=master)](https://travis-ci.com/Burnett01/fs-capture) [![npm version](https://badge.fury.io/js/%40burnett01%2Ffs-capture.svg)](https://badge.fury.io/js/%40burnett01%2Ffs-capture)
 [<img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" align="right" />](https://github.com/feross/standard)
 
 
