@@ -1,6 +1,6 @@
 {
   "name": "@burnett01/fs-capture",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "bugs": {
     "url": "https://github.com/Burnett01/fs-capture/issues"
   },
@@ -53,6 +53,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^7.0.0"
+    "mocha": "^7.2.0"
   }
 }
